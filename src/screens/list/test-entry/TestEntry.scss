@@ -1,0 +1,37 @@
+.test-entry {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 18px 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 34px;
+  align-items: center;
+  margin-bottom: 14px;
+  cursor: pointer;
+
+  &__overview,
+  &__reps {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  &__overview {
+    p:last-child {
+      color: var(--grey);
+    }
+  }
+
+  &__reps {
+    &--green {
+      color: var(--primary);
+    }
+
+    &--yellow {
+      color: var(--yellow);
+    }
+
+    &--red {
+      color: var(--red);
+    }
+  }
+}

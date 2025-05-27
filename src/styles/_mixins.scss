@@ -1,0 +1,6 @@
+@mixin mobileSplit() {
+  @media (min-width: 1000px) {
+    padding-left: 30vw;
+    padding-right: 30vw;
+  }
+}

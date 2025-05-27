@@ -1,0 +1,26 @@
+.btn {
+  border: 1px var(--white) solid;
+  width: 100%;
+  height: 69px;
+  border-radius: 14px;
+  cursor: pointer;
+
+  &--primary {
+    color: var(--primary);
+    background-color: var(--white);
+  }
+
+  &--secondary {
+    color: var(--white);
+    background-color: transparent;
+  }
+
+  &--tertiary {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+
+  &:active {
+    font-weight: 700;
+  }
+}

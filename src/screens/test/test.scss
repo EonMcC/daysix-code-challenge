@@ -1,0 +1,63 @@
+@use "../../styles/mixins" as vars;
+
+.test-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--white);
+  height: 100vh;
+  padding: 0 46px;
+
+  @include vars.mobileSplit;
+
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 80px;
+  }
+
+  &__animation-cont {
+    height: 400px;
+    width: 400px;
+    max-width: 100vw;
+    border-radius: 50%;
+    background: #50D3C2;
+    background: radial-gradient(circle, rgba(80, 211, 194, 1) 50%, rgba(0, 192, 167, 1) 74%);
+    text-align: center;
+
+    img {
+      translate: 0 50%;
+    }
+  }
+
+  &__timer {
+    font-size: 4rem;
+    translate: 0 -40px;
+  }
+
+  &__counter-cont {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    column-gap: 22px;
+
+    :first-child {
+      flex: 1;
+    }
+
+    p {
+      font-size: 2.4rem;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  button {
+    margin-top: auto;
+    margin-bottom: 40px;
+  }
+}
